@@ -1,64 +1,74 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Kriztian Eris Labatete | Fullstack Developer</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
+        <img src="/kriztian.png" className={styles.image} />
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Hi! I'm Kriztian Eris Labatete
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+          Experienced with various web development technologies such as JavaScript Frameworks, PHP Frameworks, RESTful API’s, and Micro services. Knowledgeable on Cloud services & Agile/Scrum methodology
         </p>
 
+        <div className={styles.subTitleContainer}>
+          <h2>
+            Open Projects that I've made
+          </h2>
+        </div>
+          
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+          <div className={styles.card}>
+            <h3>ecommerce-app</h3>
+            <p>⚛️ E-commerce Frontend</p>
+            <div>
+              <a className={styles.button} href="https://buzzz-ecommerce-app.herokuapp.com/" target="_blank">Website</a>
+              <a className={styles.button} href="https://github.com/krizoeris/ecommerce-react" target="_blank">GitHub</a>
+            </div>
+          </div>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+          <div href="https://nextjs.org/learn" className={styles.card}>
+            <h3>covidph-map</h3>
+            <p>🌎 Map tracker of COVID19 confirmed cases in the Philippines</p>
+            <div>
+              <a className={styles.button} href="https://covidph-map.netlify.app/" target="_blank">Website</a>
+              <a className={styles.button} href="https://github.com/krizoeris/covidph-map" target="_blank">GitHub</a>
+            </div>
+          </div>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+          <div className={styles.card}>
+            <h3>Cryptowatch</h3>
+            <p>📈 Displays the coins by market cap and the latest price change</p>
+            <div>
+              <a className={styles.button} href="https://krizoeris.github.io/Cryptowatch/" target="_blank">Website</a>
+              <a className={styles.button} href="https://github.com/krizoeris/Cryptowatch" target="_blank">GitHub</a>
+            </div>
+          </div>
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
+          <div className={styles.card}>
+            <h3>kailearning-system</h3>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              Web application that utilizes an online learning collaboration with students and teachers
             </p>
-          </a>
+            <div>
+              <a className={styles.button} href="http://kailearning.000webhostapp.com/login/index.php" target="_blank">Website</a>
+              <a className={styles.button} href="https://github.com/krizoeris/kailearning-system" target="_blank">GitHub</a>
+            </div>
+          </div>
         </div>
       </main>
 
+      <div><a className={styles.button} href="https://github.com/krizoeris/" target="_blank">Load More on GitHub...</a></div>
+
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
+        &copy; 2020 Kriztian Eris E. Labatete
       </footer>
     </div>
   )
