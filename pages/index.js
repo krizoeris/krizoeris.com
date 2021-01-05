@@ -20,7 +20,7 @@ export default function Home() {
 
         <div className={styles.subTitleContainer}>
           <h2>
-            Open Projects that I've made
+            Open Source Projects that I've made
           </h2>
         </div>
           
